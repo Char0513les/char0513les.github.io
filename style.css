@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 255, 212);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: hsl(0, 0%, 65%);
+    color: hwb(0 100% 0%);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: hsl(0, 0%, 1%);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: color 0.3s ease; /* Adding transition effect */
+}
+
+nav a:hover {
+    color: hsl(0, 77%, 52%); /* Change color on hover (you can use any color you prefer) */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
