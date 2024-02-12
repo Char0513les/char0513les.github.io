@@ -16,8 +16,10 @@
         <a href="#" class="active">Home</a>
         <a href="#">About</a>
         <a href="#" id="contact">Contact</a>
-		<a href="#">Login</a>
+        <a href="#">Login</a>
     </nav>
+    <br>
+    <h1><div id="welcome"></div></h1>
 
     <section>
         <h2 class="active">Charles Lee</h2>
@@ -40,8 +42,30 @@
     <footer>
         <div><p>bla</p></div>
 
-        <p>&copy; 2024 Ryan's cool webpage. All rights reserved.</p>
+        <p>&copy; 2024 Charles' cool webpage. All rights reserved.</p>
     </footer>
+
+    <script>
+
+        const hours = new Date().getHours(); // Get the current hour
+
+        const isMorning = hours >= 4 && hours < 12; // is it morning?
+        const isAfternoon = hours >= 12 && hours < 17; // is it afternoon?
+        const isEvening = hours >= 17 || hours < 4; // is it evening?
+
+        const welcomeDiv = document.getElementById('welcome');
+
+        let message = '';
+        if (isMorning) {
+            message = 'Good morning!';
+        } else if (isAfternoon) {
+            message = 'Good afternoon!';
+        } else {
+            message = 'Good evening!';
+        }
+
+        welcomeDiv.textContent = message;
+    </script>
 </body>
 
 </html>

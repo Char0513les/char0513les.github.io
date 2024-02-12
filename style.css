@@ -43,3 +43,8 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+div {
+    text-align: center;
+    color: hsl(0, 100%, 52%);
+}
